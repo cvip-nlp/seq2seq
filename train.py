@@ -132,8 +132,6 @@ def evaluate(epoch, model, dataloader, device, flags):
 
 
 
-
-
 if __name__ == '__main__':
     parser = theconf.ConfigArgumentParser(conflict_handler='resolve')
     parser.add_argument('--seed', type=lambda x: int(x, 0), default=None, help='set seed (default:0xC0FFEE)')
@@ -151,3 +149,4 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format='[%(asctime)s] [%(levelname)s] %(message)s', stream=sys.stderr)
 
     main(flags)
+
